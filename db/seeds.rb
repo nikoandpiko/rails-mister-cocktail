@@ -9,9 +9,9 @@ end
 
 puts "Adding drinks..."
 
-Cocktail.create(name: "Red-Headed Susan")
-Cocktail.create(name: "The PoPo")
-Cocktail.create(name: "El Magic Pepe")
+# Cocktail.create(name: "Red-Headed Susan")
+# Cocktail.create(name: "The PoPo")
+# Cocktail.create(name: "El Magic Pepe")
 
 result = JSON.parse(open('http://www.thecocktaildb.com/api/json/v1/1/list.php?i=list').read)
 drinks = result['drinks']
