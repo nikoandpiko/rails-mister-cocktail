@@ -4,6 +4,8 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   background: white;
   background-color: black;
   background: -webkit-linear-gradient(rgba(29, 38, 113, 0.5), rgba(195, 55, 100, 0.5)) fixed;

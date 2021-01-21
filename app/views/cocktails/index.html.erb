@@ -3,21 +3,16 @@
     <p>
       <span id="banner-typed-text"></span>
     </p>
-</div><br>
+</div>
 
-<div class="container">
-  <div class="row">
-    <% @cocktails.each do |cocktail| %>
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="card">
-          <div class="card-description">
-            <%= cl_image_tag cocktail.photo.key, height: 120, width: 235, crop: :fill if cocktail.photo.attached? %>
-            <h2><%= cocktail.name %></h2>
-          </div>
-          <%= link_to "", cocktail_path(cocktail), class: 'card-link' %>
+<div class="cards-list">
+  <% @cocktails.each do |cocktail| %>
+    <div class="card 1">
+      <div class="card_image"><%= cl_image_tag cocktail.photo.key, class: "image-tag", height: 240, width: 470, crop: :fill if cocktail.photo.attached? %></div>
+        <div class="card_title title-white">
+          <%= link_to cocktail.name, cocktail_path(cocktail) %>
         </div>
       </div>
-    <% end %>
-  </div>
-  <br>
+   <% end %>
+   </div>
 </div>

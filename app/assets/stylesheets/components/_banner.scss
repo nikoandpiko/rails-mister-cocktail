@@ -1,13 +1,15 @@
 .home-banner {
   background-image: url('https://media.cntraveler.com/photos/5f86eb161728afd66720d759/16:9/w_1600,c_limit/DearIrvingontheHudson-RooftopBar-NYC-2020-5.jpg');
   background-size: cover;
-  height: 88vh;
+  height: 91vh;
   color: #fa004f;
   text-align: center;
   padding-top: 32vh;
+  padding-bottom: 12vh;
   background: #0000;
   background: -webkit-linear-gradient(rgba(29, 38, 113, 0.4), rgba(195, 55, 100, 0.4)), url("https://media.cntraveler.com/photos/5f86eb161728afd66720d759/16:9/w_1600,c_limit/DearIrvingontheHudson-RooftopBar-NYC-2020-5.jpg");
   background: linear-gradient(rgba(29, 38, 113, 0.4), rgba(195, 55, 100, 0.4)), url("https://media.cntraveler.com/photos/5f86eb161728afd66720d759/16:9/w_1600,c_limit/DearIrvingontheHudson-RooftopBar-NYC-2020-5.jpg");
+  margin-bottom: 20px;
 }
 
 .home-font {
