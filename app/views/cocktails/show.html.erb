@@ -1,7 +1,7 @@
-<div class="container">
-  <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %>
+<div class="container mt-5 span-4">
+  <%= cl_image_tag @cocktail.photo.key, :class=>"show-cocktail", height: 300, width: 400, crop: :fill if @cocktail.photo.attached? %>
   <h1><%= @cocktail.name %></h1>
-  <%= link_to "Back to all cocktails", root_path %>
+  <%# <%= link_to "Back to all cocktails", root_path %>
 
   <div class="row">
     <div class="col-sm-12 col-md-6">
@@ -10,8 +10,8 @@
         <tbody>
           <thead>
             <th>Ingredient</th>
-            <th>Description</th>
-            <th>Action</th>
+            <th>Amount</th>
+            <th>Remove</th>
           </thead>
           <% @cocktail.doses.each do |dose| %>
             <tr>
@@ -31,4 +31,5 @@
       <%= render "doses/new", cocktail: @cocktail, dose: @dose %>
     </div>
   </div>
+  <br>
 </div>

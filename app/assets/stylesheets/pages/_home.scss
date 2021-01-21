@@ -1,1 +1,26 @@
 // Specific CSS for your home-page
+html {
+  height: 100%;
+}
+
+body {
+  background: white;
+  background-color: black;
+  background: -webkit-linear-gradient(rgba(29, 38, 113, 0.5), rgba(195, 55, 100, 0.5)) fixed;
+  background: linear-gradient(rgba(29, 38, 113, 0.5), rgba(195, 55, 100, 0.5)) fixed;
+  background-size: contain;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-weight: bold;
+  color: #fa004f;
+}
+
+label {
+  font-weight: bold;
+  color: #fa004f;
+}
