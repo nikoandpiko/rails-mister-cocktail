@@ -8,13 +8,52 @@
 .cocktail-show-title {
   margin-left: 145px;
   padding-top: 10px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.new_cocktail_title {
+  font-family: 'Dancing Script', cursive;
+}
+
+#cocktail_name {
+  border-radius: 5px;
+}
+
+#dose_ingredient_id {
+  border-radius: 5px;
+}
+
+#dose_description {
+  border-radius: 5px;
+}
+
+table {
+  border-collapse:separate;
+  border:solid black 1px;
+  border-radius:6px;
+  -moz-border-radius:6px;
 }
 
 th {
   color: #fa004f;
+  border-top: none;
+}
+
+td {
+  color: #fa004f;
+  font-weight: bold;
+}
+
+td:first-child, th:first-child {
+  border-left: none;
 }
 
 h3 {
   color: #fa004f;
   font-weight: bold;
+}
+
+td, th {
+  border-left:solid black 1px;
+  border-top:solid black 1px;
 }
