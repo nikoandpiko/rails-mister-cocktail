@@ -1,3 +1,20 @@
-.show-cocktail img {
+.show-cocktail {
+  border-radius: 3%;
   margin-top: 100px;
+  margin-left: 75px;
+  border: 1px solid #fa004f;
+}
+
+.cocktail-show-title {
+  margin-left: 145px;
+  padding-top: 10px;
+}
+
+th {
+  color: #fa004f;
+}
+
+h3 {
+  color: #fa004f;
+  font-weight: bold;
 }

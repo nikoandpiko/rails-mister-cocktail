@@ -1,3 +1,5 @@
+<%= render "components/navbar" %>
+
 <div class="home-banner">
   <h1 class="home-font">topShelf</h1>
     <p>
@@ -8,11 +10,16 @@
 <div class="cards-list">
   <% @cocktails.each do |cocktail| %>
     <div class="card 1">
-      <div class="card_image"><%= cl_image_tag cocktail.photo.key, class: "image-tag", height: 240, width: 470, crop: :fill if cocktail.photo.attached? %></div>
+      <div class="card_image">
+      <%= link_to cocktail_path(cocktail) do %>
+          <%= cl_image_tag cocktail.photo.key, class: "image-tag", height: 298, width: 298, crop: :fill if cocktail.photo.attached? %></div>
         <div class="card_title title-white">
-          <%= link_to cocktail.name, cocktail_path(cocktail) %>
+        <%= cocktail.name %>
         </div>
+        <% end %>
       </div>
    <% end %>
    </div>
 </div>
+
+<%= render "components/footer" %>

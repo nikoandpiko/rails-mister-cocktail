@@ -1,6 +1,15 @@
-<div class="container mt-5 span-4">
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top">
+  <a class="navbar-brand" href="/">
+    <i class="fas fa-cocktail fa-3x" style='color:#fa004f;'></i>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</div>
+
+<div class="container span-4">
   <%= cl_image_tag @cocktail.photo.key, :class=>"show-cocktail", height: 300, width: 400, crop: :fill if @cocktail.photo.attached? %>
-  <h1><%= @cocktail.name %></h1>
+  <h1 class="cocktail-show-title"><%= @cocktail.name %></h1>
   <%# <%= link_to "Back to all cocktails", root_path %>
 
   <div class="row">
@@ -32,3 +41,5 @@
     </div>
   </div>
 </div>
+
+<%# <%= render "components/footer2" %>
