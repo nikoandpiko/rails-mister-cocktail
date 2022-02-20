@@ -10,6 +10,7 @@
 <div class="container span-4">
   <%= cl_image_tag @cocktail.photo.key, :class=>"show-cocktail", height: 300, width: 400, crop: :fill if @cocktail.photo.attached? %>
   <h1 class="cocktail-show-title"><%= @cocktail.name %></h1>
+
   <%# <%= link_to "Back to all cocktails", root_path %>
 
   <div class="row">
